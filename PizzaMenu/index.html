@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Luc&eacute;Menu</title>
+<!--    fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <style>
+
+        body {
+            font-family: "Source Sans 3", sans-serif;
+            background: #FFFCEC;
+            padding: 20px;
+        }
+
+        h1, h2 {
+            font-family: "Playfair Display", serif;
+            text-transform: uppercase;
+
+            margin: 0;
+
+        }
+
+        h3, p {
+            font-family: "Source Sans 3", sans-serif;
+
+            margin: 0;
+            padding: 2px;
+
+        }
+
+        .menu {
+            padding: 20px;
+            border: 4px solid #657A2F;
+
+            display: flex;
+            flex-direction: column;
+            align-content: flex-start;
+
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .restaurant-name {
+            background: #A82F14;
+            color: white;
+
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+
+            padding: 10px;
+        }
+
+        .section {
+        }
+
+        .section-name {
+            color: #972711;
+            padding: 10px;
+
+            margin-top: 12px;
+
+            hr {
+                border: none;
+                background: #972711;
+                height: 2px;
+                margin: 0;
+
+            }
+        }
+
+        .options {
+
+        }
+
+        .item {
+            background: #FFFCEC;
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+
+        }
+        .item:hover {
+            background: #dad7cb;
+        }
+
+        .item-name {
+            margin-top: 10px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* pushes them to opposite ends */
+
+        }
+
+        .item-price {
+        }
+
+        .description {
+            margin-left: 12px;
+            margin-right: 12px;
+        }
+
+        .footer {
+            background: #657A2F;
+        }
+
+        .newsletter {
+            color: white;
+            font-family: "Playfair Display", serif;
+
+            text-align: center;
+            padding: 10px;
+        }
+
+        .newsletter:hover {
+            text-decoration: underline;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+
+<div class="menu">
+    <h1 class="restaurant-name">
+        Pizza Luc&eacute;
+    </h1>
+    <div class="section">
+        <h2 class="section-name">
+            Specialty Pizza
+            <hr>
+        </h2>
+        <div class="options">
+            <div class="item">
+                <h3 class="item-name">
+                    Elote Pizza
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    This a-maize-ing pie starts with Tajin
+                    spiced sweet corn, applewood smoked bacon,
+                    fresh jalapeño, sliced green onion, mozzarella
+                    and feta cheese on top of our bianca sauce
+                    and drizzled with cilantro Aioli.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    Baked Potato Pizza
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Idaholy Moly! We smother our pizza
+                    crust in buttery, garlic baby red mashed
+                    potatoes, and top it with broccoli,
+                    fresh-diced tomatoes, cheddar cheese and
+                    chopped bacon. Available vegetarian with
+                    Herbivorous Butcher vegan bacon.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    The Margherita
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Our Margherita pizza features fresh basil,
+                    bruschetta tomatoes, toasted garlic,
+                    parmesan cheese and light mozzarella on
+                    our bianca sauce.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-name">
+            Salad
+            <hr>
+        </h2>
+        <div class="options">
+            <div class="item">
+                <h3 class="item-name">
+                    Super Greens
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Fresh spinach, artisan greens, radicchio,
+                    broccoli, shredded Brussels sprouts, fresh
+                    orange and sunflower seeds tossed in our
+                    homemade sesame tahini dressing.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    Greek
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Artisan greens, Kalamata olives, tomato,
+                    cucumber, red onion, feta cheese and
+                    pepperoncinis with our homemade Greek
+                    vinaigrette.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    Spinach
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Loads of fresh spinach, radicchio, candied
+                    pecans, red onions, dried cranberries and
+                    blue cheese crumbles served with a side
+                    of our homemade white balsamic vinaigrette.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-name">
+            Desserts
+            <hr>
+        </h2>
+        <div class="options">
+            <div class="item">
+                <h3 class="item-name">
+                    Carrot Cake
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    A slight twist from the original,
+                    baked with pineapple and walnuts,
+                    layered with delicious cream cheese
+                    frosting.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    Tiramisu
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Fall in love again for the first time
+                    with this rich dessert layered with
+                    homemade lady fingers, espresso, dark
+                    rum, mascarpone cheese & zabaglione,
+                    sprinkled with cocoa.
+                </p>
+            </div>
+            <div class="item">
+                <h3 class="item-name">
+                    Molly Bar
+                    <p class="item-price">
+                        $0.00
+                    </p>
+                </h3>
+                <p class="description">
+                    Our delicious gluten and dairy free chocolate
+                    brownie. Contains soy. Add any GF Izzy's ice
+                    cream and a side of chocolate sauce and make
+                    your own Brownie Sundae!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3 class="newsletter">
+            Sign up for our Newsletter!
+        </h3>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,343 @@
+
+body {
+    font-family: "Public Sans", "Open Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    background: #27391F;
+}
+
+
+.header {
+    position: fixed;
+    z-index: 100;
+
+    width: 96%;
+    height: 6vh;
+
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: #EDEEEB50;
+    border: 2px solid #EDEEEB80;
+    border-radius: 3vh;
+    backdrop-filter: blur(20px);
+}
+
+.header .header-contents {
+    width: 97%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family:"Open Sans", sans-serif;
+    color: #EDEEEB;
+
+    margin: 0 2px;
+    padding: 0;
+
+
+}
+
+.header .header-contents .silouette {
+    height: 90%;
+    background-color: #EDEEEB;
+    border-radius: 50%;
+}
+
+.header .header-contents .title{
+    font-size: clamp(3vw, 3vw + 1rem, 100%);
+    font-weight: 900;
+}
+
+.header .header-contents .nav {
+    display: flex;
+    gap: 10%;
+
+    justify-content: right ;
+    align-items: center;
+    margin-left: auto;
+
+    font-size: 60%;
+    font-weight: lighter;
+
+}
+
+.header .header-contents .nav a {
+    padding: 0;
+    margin: 0;
+    color: #EDEEEB;
+    text-decoration: none;
+}
+
+
+
+.main {
+
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;   
+}
+
+#landing {
+
+
+    position: relative;
+
+    padding: 5rem;
+
+    aspect-ratio: 3/1;
+    background-image: url("./images/web_photo_editor.jpg");
+    background-size: cover;
+    background-position: bottom center;
+
+    border: 4px solid #EDEEEB20;
+}
+
+#landing .title {
+
+
+    position: absolute;
+    bottom: 2vh;
+    right: 10vh;
+
+    width: 50%;
+    height: 80%;
+
+    color: white;
+
+    text-align: center;
+
+    .title-text{
+        margin: 1rem;
+        font-size: clamp(8vw, 8vw + 1rem, 100%);
+    }
+
+}
+
+#description {
+    background-color: #354F3F;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    padding: 2vh;
+    gap: 10px;
+    }
+
+#description .loon-imgs {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.loon1{
+    width: 50%;
+    aspect-ratio: 1/1;
+
+    background: url("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Archibald_Thorburn_Plate_77.jpg/960px-Archibald_Thorburn_Plate_77.jpg");
+    background-size: cover;
+    background-position: top center;
+
+    border: 4px solid #EDEEEB;
+
+}
+
+#description .loon-imgs .loon-row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.loon2{
+    width: 100%;
+    aspect-ratio: 4/3;
+
+    background: url("https://upload.wikimedia.org/wikipedia/commons/f/f5/Yellow-billed_Loon.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border: 4px solid #EDEEEB;
+
+}
+
+.loon3{
+    width: 100%;
+    aspect-ratio: 4/3;
+
+    background: url("https://upload.wikimedia.org/wikipedia/commons/a/a7/Gavia_immer_-Marshfield%2C_Vermont%2C_USA_-flying-8_%285%29.jpg");
+    background-size: cover;
+    background-position: center;
+
+    border: 4px solid #EDEEEB;
+
+}
+
+
+.description-text {
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: space-around;
+    padding: 2%;
+
+    width: 40%;
+
+    color: #EDEEEB;
+
+    h2 {
+
+        font-size: 3vw;
+        margin: 0;
+
+    }
+
+    p {
+        padding: 0;
+        font-size: 1.7vw;
+    }
+
+}
+
+#species {
+    background-color: #224460;
+
+    aspect-ratio: 3/1;
+    color: #EDEEEB;
+    padding-bottom: 3%;
+}
+
+
+.overarching h2 {
+
+    margin-left: 12%;
+    font-size: 3vw;
+}
+
+.overarching p {
+
+    margin-left: 14%;
+}
+
+
+#species .slides {
+
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #808E9F;
+}
+
+
+#species .slides .slide {
+
+    aspect-ratio: 3/1;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    align-items: center;
+}
+
+
+#species .slides .slide .species-img  {
+    background-size: cover;
+    background-position: left center;
+    width: 50%;
+    height: 100%;
+}
+
+
+
+#species .slides .slide .species-text {
+
+    width: 50%;
+    height: 100%;
+
+    h3 {
+
+        font-size: 2vw;
+    }
+
+    i {
+
+        font-size: 1vw;
+    }
+
+    p {
+
+        font-size: 1vw;
+    }
+
+
+}
+
+
+#species .slides .slide button {
+    background: transparent;
+    text-align: center;
+    font-size: 2vw;
+
+    height: 3vw;
+
+    padding-bottom: 4px;
+    color: white;
+    border: none;
+    border-radius: 1vw;
+}
+#species .slides .slide button:hover {
+    background: #5A7B92;
+}
+
+.footer {
+    background-color: #354F3F;
+
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+    color: #EDEEEB;
+}
+
+
+.footer .link-type {
+    font-size: smaller;
+    padding:0;
+}
+
+.footer .links {
+    font-size: smaller;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.footer .links a {
+    color: #EDEEEB;
+    text-decoration: none;
+}
+.footer .links a:hover {
+    text-decoration: underline;
+}
+
+.footer p {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
