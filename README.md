@@ -5,26 +5,27 @@ Freya Russell - CSCI and GDES Portfolio
 
 **The Minnesota Birth Center**  
 *HTML*  *CSS* *ILLUSTRATION*  
-Mockup Website for the Minnesota Birth Center
-Illustration of woman was hand drawn not AI
-Not completed
-[Git Pages](https://russ1204.github.io/MinnesotaBirthCenter/)  |   
-
-**Loon Website**  
-*HTML*  *CSS*   
-Rough website design
-[Git Pages](https://russ1204.github.io/LoonWebsite/)  |  
-
-**HUMIS Website Recreation**  
-*HTML*  *CSS*  
-Recreated website based on PDF given
-Home and About US page done
-[Git Pages](https://russ1204.github.io/HUMISWebsiteRecreation/about.html)  |  
+Mockup Website for the Minnesota Birth Center  
+Illustration of woman was hand drawn not AI  
+Not completed  
+[Git Pages](https://russ1204.github.io/MinnesotaBirthCenter/)  
 
 **Hat Image Carousel**  
 *HTML*  *CSS* *JAVASCRIPT*  
-Image carousel created using JS
-[Git Pages](https://russ1204.github.io/HatImageCarousel/)  |   
+Image carousel created using JS  
+[Git Pages](https://russ1204.github.io/HatImageCarousel/)
+
+**Loon Website**  
+*HTML*  *CSS*   
+Rough website design  
+[Git Pages](https://russ1204.github.io/LoonWebsite/)
+
+**HUMIS Website Recreation**  
+*HTML*  *CSS*  
+Recreated website based on PDF given  
+Home and About US page done  
+[Git Pages](https://russ1204.github.io/HUMISWebsiteRecreation/about.html)  
+
 
 ## Graphic Design
 
