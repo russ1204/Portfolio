@@ -2,5 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HUMISWebsiteRecreation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HatImageCarousel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/LoonWebsite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MinnesotaBirthCenter" vcs="Git" />
   </component>
 </project>
