@@ -1,0 +1,959 @@
+
+/*reset base page*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --font-heading: 'Raleway', sans-serif, semi-bold, 0.05;
+    --font-body:    'Nunito Sans', sans-serif, normal, 0.05em;
+    --font-extra:   'Bebas Neue', sans-serif;
+
+    --color-green:        #7A998C;
+    --color-lightgreen:   #DCE4E1;
+    --color-purple:        #672A4E;
+    --color-purple-dark:   #4E1F3B;
+    --color-mauve:       #73636F;
+    --color-mauve-tint:    rgba(115, 99, 111, 0.30);
+    --color-green-tint:     rgba(122, 153, 140, 0.60);
+}
+
+body {
+    font-family: Raleway, sans-serif, semi-bold;
+    font-weight: 700;
+}
+
+.mbc-page {
+    width: 1440px;
+    margin: 0 auto;
+    background: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.mbc-header {
+    display: flex;
+    flex-direction: row;
+    height: 10vw;
+    padding: 1vw;
+}
+
+.mbc-header .logo {
+    height: 100%;
+    align-self: center;
+    align-items: center;
+}
+.mbc-header .logo img {
+    height: 100%;
+
+
+}
+
+
+.mbc-header .header_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    height: 100%;
+    padding: 1vw;
+    padding-top: .5vw;
+    width: 100%;
+    gap: .3vw;
+
+    align-self: center;
+}
+
+
+.mbc-header .header_text h1 {
+    font-family: var(--font-extra);
+    font-weight: 400;
+    font-size: 3.5vw;
+    text-align: center;
+    border-bottom: solid 1px var(--color-green);
+    width: 100%;
+    line-height: 1;
+    color: #7A998C;
+}
+
+.mbc-header .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: stretch;
+    width: 100%;
+    height: 100%;
+}
+
+.mbc-header .navigation a {
+    font-family: var(--font-body);
+    font-size: 1.5vw;
+    line-height: 1;
+    height: 100%;
+    transition: color .2s ease;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    padding:1vw;
+    width: 100%;
+}
+
+.mbc-header .navigation a:hover {
+    background-color: #DCE4E1;
+}
+
+.btn {
+    background-color: var(--color-purple);
+    margin: 1vw;
+    text-align: center;
+    align-content: center;
+    padding: 1vw;
+    height: fit-content;
+    width: fit-content;
+}
+.btn a {
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    text-decoration: none;
+    font-size: 1.5vw;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    line-height: 1;
+}
+.btn:hover {
+    background: var(--color-purple-dark);
+}
+
+
+
+/*home*/
+#home {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50vw;
+    align-items: flex-start;
+}
+#home .home_photo_banner {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20vw;
+    overflow: hidden;
+    background: url("./files/HomeBanner.png") center / cover no-repeat;
+    z-index: -1;
+}
+
+#home .home_text {
+    background: var(--color-green);
+    margin: 8vw;
+    margin-top: 10vw;
+    padding: 3vw;
+    width: 42%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+#home .home_text h2 {
+    font-family: Raleway, sans-serif, semi-bold;
+    font-size: 3.5vw;
+    letter-spacing: 0.05em;
+
+
+}
+#home .home_text p {
+    font-family: 'Nunito Sans', sans-serif, normal;
+    font-size: 2vw;
+    font-weight: normal;
+    padding-right: 3vw;
+}
+#home .home_text a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1.5vw;
+    background: var(--color-purple);
+    width: fit-content;
+    align-self: center;
+    font-size: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+}
+
+#home .home_text a:hover {
+    background: var(--color-purple-dark);
+}
+
+#home .home_quote {
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 35%;
+
+}
+
+#home .home_quote p {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1.5vw;
+    background: var(--color-purple);
+    font-size: 2vw;
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+    width: 100%;
+    margin: 3vw;
+}
+
+#home .home_quote img {
+    position: absolute;
+    top: 0;
+    right: 9vw;
+    aspect-ratio: 984/1952 ;
+    width: 23vw;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+/* === SERVICES === */
+#services {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#services h2 {
+    height: 10%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2vw;
+    text-align: center;
+    padding: 0.5vw;
+    color: var(--color-purple);
+}
+#services .services_band {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 5vw;
+    padding-top: 0;
+    padding-bottom: 3vw;
+    gap: 5vw;
+}
+
+#services .service_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--color-lightgreen);
+    text-align: center;
+    height: 100%;
+}
+.service_card .star {
+    margin-top: 1vw;
+    aspect-ratio: 1/1;
+    height: 7vw;
+}
+
+.services_band h3 {
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: bolder;
+    font-size: 1.8vw;
+    padding: 1vw;
+}
+.services_band p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1vw;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: var(--color-purple);
+    background-color: white;
+    height: 100%;
+    padding: 1vw;
+}
+
+/*banner*/
+#banner {
+    width: 100%;
+    height: 20vw;
+    background: url("./files/MBCBanner.png") center / cover no-repeat;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+}
+#banner .banner_plate {
+    align-self: center;
+    width: 40%;
+    background-color: var(--color-mauve-tint);
+    align-content: center;
+}
+
+#banner .banner_plate h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 3vw;
+
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 1vw;
+}
+
+/* === WHY US === */
+#why {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+
+    padding: 2vw 5vw;
+    gap: 4vw;
+
+}
+#why .why_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    height: stretch;
+    width: 100%;
+    justify-content: center;
+
+}
+#why .why_text h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 2vw;
+}
+#why .why_text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 1.8vw;
+}
+
+#why .why_display {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+#why .why_experiences {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: var(--color-green);
+    padding: 2vw;
+    margin-right: 5vw;
+    gap: 1vw;
+    z-index: 2;
+}
+
+#why .why_experiences h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 1.5vw;
+    text-align: center;
+    width: 100%;
+    color: white;
+}
+
+#why .why_experiences .testimonial {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;}
+
+#why .why_experiences .testimonial .attribution {
+    align-self: flex-end;
+    font-weight: bolder;
+
+
+}
+
+#why .why_info {
+    position: relative;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+
+#why .why_info .why_bread {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 10vw;
+    width: fit-content;
+    overflow: visible;
+}
+
+#why .why_info .why_bread img {
+    height: 18vw;
+}
+
+
+#why .why_info .why_stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+    width: 100%;
+}
+#why .why_info .why_stat .num {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 3vw;
+    color: var(--color-purple);
+    text-align: center;
+
+}
+#why .why_info .why_stat .lbl {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1vw;
+    color: var(--color-mauve);
+    text-align: center;
+    width: 5vw;
+
+}
+
+
+
+/*I did not have time to add this part unfortunately*/
+#stats {
+    height: 20vw;
+    background-color: var(--color-lightgreen);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#stats .stat_circles{
+    display: flex;
+    gap: 1vw;
+}
+
+#stats .stat_circles .national {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    gap:.5vw;
+}
+#stats .stat_circles .national .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-mauve);
+    width: 5vw;
+    aspect-ratio: 1/1;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 2vw;
+    padding: 1vw;
+}
+#stats .stat_circles .national  .circle  {
+    font-size: 1.5vw;
+    padding: 0;
+}
+
+#stats .stat_circles .national .cap {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1vw;
+    letter-spacing: 0.05em;
+    width: min-content;
+}
+
+#stats .stat_circles .mbc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    text-align: center;
+    gap:.5vw;
+
+}
+
+#stats .stat_circles .mbc .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+    width: 10vw;
+
+    aspect-ratio: 1/1;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 4vw;
+    padding: 1vw;
+}
+#stats .stat_circles .mbc .cap {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.2vw;
+    letter-spacing: 0.05em;
+    width: fit-content;
+}
+
+
+
+#stats .stat_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1vw;
+}
+#stats .stat_item .stat_title {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2vw;
+    letter-spacing: 0.05em;
+
+}
+#stats .stat_item {
+    padding: 2vw;
+}
+
+/*Or this one */
+#info_bar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+#info_bar .model {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-purple);
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    gap: 1vw;
+    color: white;
+    text-align: center;
+    width: min-content;
+}
+
+#info_bar .model h2 {
+    border-bottom: 1px solid white;
+    padding: 0 8vw 1vw;
+    width: max-content;
+    height: fit-content;
+}
+#info_bar .model p {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: lighter;
+    font-size: 1.5vw;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: fit-content;
+}
+#info_bar .info_loco {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw 5vw;
+    height: fit-content;
+
+}
+#info_bar .info_loco .info_text {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    justify-content: center;
+    gap: 3vw;
+}
+#info_bar .location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2vw;
+    width: fit-content;
+}
+
+#info_bar .location h3 {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.05em;
+    font-size: 1.5vw;
+    padding: 1vw;
+}
+#info_bar .location p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    font-size: 1vw;
+}
+
+#info_bar .btn a {
+    font-size: 2.2vw;
+    padding: 2vw;
+
+}
+/* */
+#footer {
+    background: var(--color-green);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2vw;
+    color: white;
+}
+#footer .footer_top {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 1vw;
+}
+
+#footer .footer_top .footer_logo {
+    height: 100%;
+    width: 8vw;
+    flex-shrink: 0;
+
+}
+
+#footer .footer_top .footer_cols {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+#footer .footer_col {
+
+    width: fit-content;
+    height: 100%;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#footer .footer_col h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+#footer .footer_col ul {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1vw;
+    letter-spacing: 0.05em;
+    padding-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: .5vw;
+}
+#footer .footer_col li {
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: var(--mbc-white);
+    cursor: pointer;
+    transition: opacity .2s ease;
+    padding: 0.25vw;
+}
+#footer .footer_col li:hover {
+    color: var(--color-lightgreen);
+    text-decoration: underline;
+}
+
+#footer .footer_top .footer_community {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1vw;
+    height: 100%;
+
+}
+#footer .footer_community h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+}
+#footer .footer_socials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+}
+#footer .social_dot {
+    background-color: var(--color-purple);
+    width: 5vw;
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer .social_dot:hover {
+    background-color: var(--color-purple-dark);
+}
+#footer .social_dot img {
+    width: 60%;
+}
+
+#footer .footer_bottom {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#footer .footer_mission {
+    font-family: 'Nunito Sans', sans-serif;
+    padding: 1vw;
+    display: flex;
+    max-width: 40%;
+    height: 100%;
+}
+
+#footer .footer_locations {
+    display: flex;
+    gap: 3vw;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+}
+#footer .footer_loc {
+    display: flex;
+    flex-direction: column;
+
+}
+#footer .footer_loc p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: lighter;
+}
+
+#footer .footer_loc p:hover {
+    text-decoration: underline;
+}
+#footer .footer_loc .loc_city {
+    font-weight: bolder;
+    font-size: larger;
+
+}
+
+
+/*Second Page*/
+#about_home {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+
+}
+#about_home .seperator {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 10vw;
+    background-color: var(--color-lightgreen);
+    z-index: -1;
+}
+#about_home .about_left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2vw 3vw;
+    color: white;
+    height: 100%;
+    aspect-ratio: 3/2;
+
+}
+
+#about_home .about_left img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top:0;
+    left: 0;
+}
+#about_home .about_left .title {
+    background-color: var(--color-green-tint);
+    width:100%;
+    height: 10vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Raleway, sans-serif, semi-bold;
+    font-size: 2.5vw;
+    letter-spacing: 0.05em;
+
+}
+
+
+#about_home .about_left .about_info {
+    background-color: var(--color-green-tint);
+    margin: 0 2vw 1vw;
+    padding: 1vw;
+    font-family: 'Nunito Sans', sans-serif, normal;
+    font-size: 2.2vw;
+    font-weight: normal;
+}
+#about_home .about_right {
+    position: relative;
+    color: var(--color-purple);
+    width: 100%;
+    height: 100%;
+}
+#about_home .about_right .about_contents {
+    display: flex;
+    flex-direction: column;
+
+}
+#about_home .about_right .about_contents .contents_title {
+    height: 10vw;
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+
+}
+#about_home .about_right .about_contents h2 {
+    font-family: Raleway, sans-serif, semi-bold;
+    font-size: 2.2vw;
+    letter-spacing: 0.08em;
+    padding: .8vw;
+    padding-left: 0;
+}
+#about_home .about_right .about_contents .about_sections {
+    display: flex;
+    flex-direction: column;
+    border-left: .2vw solid var(--color-purple);
+    padding: .5vw 0 .5vw 0;
+    width: max-content;
+}
+#about_home .about_right .about_contents .about_sections a {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.8vw;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    padding: .6vw 1vw .6vw 1vw;
+    text-decoration: none;
+    color: var(--color-purple);
+}
+
+#about_home .about_right .about_contents .about_sections a:hover {
+    background-color: var(--color-mauve-tint);
+}
+
+#about_home img {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 0;
+    height: 98%;
+}
+
+/*Image*/
+
+#image_container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+}
+#image_container .main_image {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: -1;
+    max-height: fit-content;
+}
+
+#image_container .main_image img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+#image_container .image_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-green);
+    height: fit-content;
+    width: 50%;
+    color: white;
+    margin: 5vw;
+    padding: 3vw;
+    gap: 1vw
+}
+
+#image_container .image_text .image_title {
+    font-family: Raleway, sans-serif, semi-bold;
+    font-size: 3vw;
+    letter-spacing: 0.08em;
+    padding: 1vw;
+}
+
+#image_container .image_text p {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.8vw;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+}
+
+
+
