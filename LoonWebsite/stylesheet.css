@@ -88,9 +88,7 @@ body {
     padding: 5rem;
 
     aspect-ratio: 3/1;
-    background-image: url("./images/Web_Photo_Editor.jpg");
-    background-size: cover;
-    background-position: bottom center;
+    background: url("images/Web_Photo_Editor.jpg") bottom center / cover no-repeat;
 
     border: 4px solid #EDEEEB20;
 }
